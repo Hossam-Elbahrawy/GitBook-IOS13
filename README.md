@@ -11,10 +11,12 @@ I am building this project to practice using the following:
 - Unit Testing. 
 
 ## Installation
-1. Clone and install all the pod files.
-> git clone https://github.com/Hossam-Elbahrawy/GitBook-IOS13.git
-> pod install
-2. Run the GitBook-IOS13.xcworkspace.
+1. Clone this repo and install all the pod files.
+```bash
+git clone https://github.com/Hossam-Elbahrawy/GitBook-IOS13.git
+pod install
+```
+2. Run the GitBook-IOS13.xcworkspace in Xcode.
 3. Build and run the application on the simulator or your physical device.
 
 
