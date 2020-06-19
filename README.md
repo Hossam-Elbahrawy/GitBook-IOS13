@@ -4,19 +4,27 @@
 
 ## Introduction
 Application for finding viewing GitHub repositories for any user built using Swift 5 & IOS13.
-I am building this project to apply the MVP architecture and Unit Testing.  
+I am building this project to practice using the following:
+- [GitHub API](https://developer.github.com/v3/)
+- MVP (Model–View–Presenter) Architecture.
+- Building good network Layer.
+- Unit Testing. 
+
 
 ## To-Do
-- [] Launch Screen
-- [] Landing Screen
-- [] Repos Screen
-- [] Search API
-- [] Get User's repos
+- [ ] Read about MVP architecture  
+- [ ] Launch screen
+- [ ] Search screen view
+- [ ] Search screen presenter
+- [ ] Search screen unit tests
+- [ ] Build network layer
+- [ ] Get user's repos using GibHub API
+- [ ] Repose model
+- [ ] Repos list screen view
+- [ ] Repos list screen presenter
+- [ ] Repos list screen unit tests
 
 ## Screenshots
-
-### Landing Screen
-<img src="Documentation/signIn.gif" alt="Sing In Screen" width="100%">
 
 Support
 ------
