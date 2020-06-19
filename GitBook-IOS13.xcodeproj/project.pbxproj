@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84B6C41BC5104895B7FE4943 /* Pods_GitBook_IOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897E0319C0930D7309BA93FA /* Pods_GitBook_IOS13.framework */; };
+		B9860A8653E067F7E24C149B /* Pods_GitBook_IOS13Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9EF4FA1513C2703AB21F87 /* Pods_GitBook_IOS13Tests.framework */; };
 		BF31F215249D71DF0048D5FA /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31F214249D71DF0048D5FA /* Repository.swift */; };
 		BF428F10249946B900D19845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF428F0F249946B900D19845 /* AppDelegate.swift */; };
 		BF428F12249946B900D19845 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF428F11249946B900D19845 /* SceneDelegate.swift */; };
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D7651F5286DA4A7380D14CA /* Pods-GitBook-IOS13Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook-IOS13Tests.debug.xcconfig"; path = "Target Support Files/Pods-GitBook-IOS13Tests/Pods-GitBook-IOS13Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		64037A7C0CE64FAF35D2B718 /* Pods-GitBook-IOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook-IOS13.debug.xcconfig"; path = "Target Support Files/Pods-GitBook-IOS13/Pods-GitBook-IOS13.debug.xcconfig"; sourceTree = "<group>"; };
+		86963C9BBD5108B227F28A07 /* Pods-GitBook-IOS13Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook-IOS13Tests.release.xcconfig"; path = "Target Support Files/Pods-GitBook-IOS13Tests/Pods-GitBook-IOS13Tests.release.xcconfig"; sourceTree = "<group>"; };
+		897E0319C0930D7309BA93FA /* Pods_GitBook_IOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitBook_IOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF31F214249D71DF0048D5FA /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		BF428F0C249946B900D19845 /* GitBook-IOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitBook-IOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF428F0F249946B900D19845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,8 @@
 		BF428F22249946BA00D19845 /* GitBook-IOS13Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GitBook-IOS13Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF428F26249946BA00D19845 /* GitBook_IOS13Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitBook_IOS13Tests.swift; sourceTree = "<group>"; };
 		BF428F28249946BA00D19845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C204969CCA8D783754A2F551 /* Pods-GitBook-IOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook-IOS13.release.xcconfig"; path = "Target Support Files/Pods-GitBook-IOS13/Pods-GitBook-IOS13.release.xcconfig"; sourceTree = "<group>"; };
+		CA9EF4FA1513C2703AB21F87 /* Pods_GitBook_IOS13Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitBook_IOS13Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B6C41BC5104895B7FE4943 /* Pods_GitBook_IOS13.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +63,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9860A8653E067F7E24C149B /* Pods_GitBook_IOS13Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12393319B61320439D55A4F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				897E0319C0930D7309BA93FA /* Pods_GitBook_IOS13.framework */,
+				CA9EF4FA1513C2703AB21F87 /* Pods_GitBook_IOS13Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C4FA97EADE6140E262FC3A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64037A7C0CE64FAF35D2B718 /* Pods-GitBook-IOS13.debug.xcconfig */,
+				C204969CCA8D783754A2F551 /* Pods-GitBook-IOS13.release.xcconfig */,
+				3D7651F5286DA4A7380D14CA /* Pods-GitBook-IOS13Tests.debug.xcconfig */,
+				86963C9BBD5108B227F28A07 /* Pods-GitBook-IOS13Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BF31F213249D71C40048D5FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +105,8 @@
 				BF428F0E249946B900D19845 /* GitBook-IOS13 */,
 				BF428F25249946BA00D19845 /* GitBook-IOS13Tests */,
 				BF428F0D249946B900D19845 /* Products */,
+				9C4FA97EADE6140E262FC3A8 /* Pods */,
+				12393319B61320439D55A4F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF428F2B249946BA00D19845 /* Build configuration list for PBXNativeTarget "GitBook-IOS13" */;
 			buildPhases = (
+				6222F4B6196E643970A71655 /* [CP] Check Pods Manifest.lock */,
 				BF428F08249946B900D19845 /* Sources */,
 				BF428F09249946B900D19845 /* Frameworks */,
 				BF428F0A249946B900D19845 /* Resources */,
+				0638DF73AA5EDE67458035A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +169,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF428F2E249946BA00D19845 /* Build configuration list for PBXNativeTarget "GitBook-IOS13Tests" */;
 			buildPhases = (
+				FFD682658FE42473EC2EB0E2 /* [CP] Check Pods Manifest.lock */,
 				BF428F1E249946BA00D19845 /* Sources */,
 				BF428F1F249946BA00D19845 /* Frameworks */,
 				BF428F20249946BA00D19845 /* Resources */,
@@ -205,6 +241,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0638DF73AA5EDE67458035A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitBook-IOS13/Pods-GitBook-IOS13-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitBook-IOS13/Pods-GitBook-IOS13-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitBook-IOS13/Pods-GitBook-IOS13-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6222F4B6196E643970A71655 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitBook-IOS13-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD682658FE42473EC2EB0E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitBook-IOS13Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF428F08249946B900D19845 /* Sources */ = {
@@ -372,6 +472,7 @@
 		};
 		BF428F2C249946BA00D19845 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64037A7C0CE64FAF35D2B718 /* Pods-GitBook-IOS13.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -389,6 +490,7 @@
 		};
 		BF428F2D249946BA00D19845 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C204969CCA8D783754A2F551 /* Pods-GitBook-IOS13.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,6 +508,7 @@
 		};
 		BF428F2F249946BA00D19845 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7651F5286DA4A7380D14CA /* Pods-GitBook-IOS13Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -427,6 +530,7 @@
 		};
 		BF428F30249946BA00D19845 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86963C9BBD5108B227F28A07 /* Pods-GitBook-IOS13Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
