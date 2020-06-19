@@ -7,7 +7,7 @@ Application for finding viewing GitHub repositories for any user built using Swi
 I am building this project to practice using the following:
 - [GitHub API](https://developer.github.com/v3/)
 - MVP (Model–View–Presenter) Architecture.
-- Building good network Layer.
+- Building good Network Layer.
 - Unit Testing. 
 
 
@@ -18,7 +18,7 @@ I am building this project to practice using the following:
 - [ ] Search screen presenter
 - [ ] Search screen unit tests
 - [ ] Build network layer
-- [ ] Get user's repos using GibHub API
+- [ ] Get user's repos using [GitHub API](https://developer.github.com/v3/)
 - [ ] Repose model
 - [ ] Repos list screen view
 - [ ] Repos list screen presenter

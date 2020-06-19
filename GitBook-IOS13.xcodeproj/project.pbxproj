@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF31F215249D71DF0048D5FA /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31F214249D71DF0048D5FA /* Repository.swift */; };
 		BF428F10249946B900D19845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF428F0F249946B900D19845 /* AppDelegate.swift */; };
 		BF428F12249946B900D19845 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF428F11249946B900D19845 /* SceneDelegate.swift */; };
 		BF428F14249946B900D19845 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF428F13249946B900D19845 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF31F214249D71DF0048D5FA /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		BF428F0C249946B900D19845 /* GitBook-IOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitBook-IOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF428F0F249946B900D19845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF428F11249946B900D19845 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF31F213249D71C40048D5FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF31F214249D71DF0048D5FA /* Repository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BF428F03249946B900D19845 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 		BF428F0E249946B900D19845 /* GitBook-IOS13 */ = {
 			isa = PBXGroup;
 			children = (
+				BF31F213249D71C40048D5FA /* Model */,
 				BF428F0F249946B900D19845 /* AppDelegate.swift */,
 				BF428F11249946B900D19845 /* SceneDelegate.swift */,
 				BF428F13249946B900D19845 /* ViewController.swift */,
@@ -203,6 +214,7 @@
 				BF428F14249946B900D19845 /* ViewController.swift in Sources */,
 				BF428F10249946B900D19845 /* AppDelegate.swift in Sources */,
 				BF428F12249946B900D19845 /* SceneDelegate.swift in Sources */,
+				BF31F215249D71DF0048D5FA /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
