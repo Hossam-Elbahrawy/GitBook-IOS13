@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,11 +12,14 @@
 		BF31F215249D71DF0048D5FA /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31F214249D71DF0048D5FA /* Repository.swift */; };
 		BF428F10249946B900D19845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF428F0F249946B900D19845 /* AppDelegate.swift */; };
 		BF428F12249946B900D19845 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF428F11249946B900D19845 /* SceneDelegate.swift */; };
-		BF428F14249946B900D19845 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF428F13249946B900D19845 /* ViewController.swift */; };
 		BF428F17249946B900D19845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF428F15249946B900D19845 /* Main.storyboard */; };
 		BF428F19249946BA00D19845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF428F18249946BA00D19845 /* Assets.xcassets */; };
 		BF428F1C249946BA00D19845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF428F1A249946BA00D19845 /* LaunchScreen.storyboard */; };
 		BF428F27249946BA00D19845 /* GitBook_IOS13Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF428F26249946BA00D19845 /* GitBook_IOS13Tests.swift */; };
+		BF60D28324A0F89000C5F432 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D28224A0F89000C5F432 /* SearchViewController.swift */; };
+		BF60D28524A0F89F00C5F432 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D28424A0F89F00C5F432 /* SearchPresenter.swift */; };
+		BF60D28824A0F9B900C5F432 /* ReposTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D28724A0F9B900C5F432 /* ReposTableViewController.swift */; };
+		BF60D28A24A0F9E800C5F432 /* ReposTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D28924A0F9E800C5F432 /* ReposTablePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		BF428F0C249946B900D19845 /* GitBook-IOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitBook-IOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF428F0F249946B900D19845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF428F11249946B900D19845 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF428F13249946B900D19845 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF428F16249946B900D19845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF428F18249946BA00D19845 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF428F1B249946BA00D19845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +48,10 @@
 		BF428F22249946BA00D19845 /* GitBook-IOS13Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GitBook-IOS13Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF428F26249946BA00D19845 /* GitBook_IOS13Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitBook_IOS13Tests.swift; sourceTree = "<group>"; };
 		BF428F28249946BA00D19845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF60D28224A0F89000C5F432 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BF60D28424A0F89F00C5F432 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		BF60D28724A0F9B900C5F432 /* ReposTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTableViewController.swift; sourceTree = "<group>"; };
+		BF60D28924A0F9E800C5F432 /* ReposTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTablePresenter.swift; sourceTree = "<group>"; };
 		C204969CCA8D783754A2F551 /* Pods-GitBook-IOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook-IOS13.release.xcconfig"; path = "Target Support Files/Pods-GitBook-IOS13/Pods-GitBook-IOS13.release.xcconfig"; sourceTree = "<group>"; };
 		CA9EF4FA1513C2703AB21F87 /* Pods_GitBook_IOS13Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitBook_IOS13Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,13 +93,14 @@
 				3D7651F5286DA4A7380D14CA /* Pods-GitBook-IOS13Tests.debug.xcconfig */,
 				86963C9BBD5108B227F28A07 /* Pods-GitBook-IOS13Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		BF31F213249D71C40048D5FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BF60D28624A0F99300C5F432 /* ReposTable */,
+				BF60D28124A0F87000C5F432 /* Search */,
 				BF31F214249D71DF0048D5FA /* Repository.swift */,
 			);
 			path = Model;
@@ -122,14 +129,12 @@
 		BF428F0E249946B900D19845 /* GitBook-IOS13 */ = {
 			isa = PBXGroup;
 			children = (
+				BF60D28024A0F7B300C5F432 /* Network */,
+				BF60D27E24A0F61400C5F432 /* Presenter */,
 				BF31F213249D71C40048D5FA /* Model */,
+				BF60D27F24A0F6CA00C5F432 /* Resources */,
 				BF428F0F249946B900D19845 /* AppDelegate.swift */,
 				BF428F11249946B900D19845 /* SceneDelegate.swift */,
-				BF428F13249946B900D19845 /* ViewController.swift */,
-				BF428F15249946B900D19845 /* Main.storyboard */,
-				BF428F18249946BA00D19845 /* Assets.xcassets */,
-				BF428F1A249946BA00D19845 /* LaunchScreen.storyboard */,
-				BF428F1D249946BA00D19845 /* Info.plist */,
 			);
 			path = "GitBook-IOS13";
 			sourceTree = "<group>";
@@ -141,6 +146,49 @@
 				BF428F28249946BA00D19845 /* Info.plist */,
 			);
 			path = "GitBook-IOS13Tests";
+			sourceTree = "<group>";
+		};
+		BF60D27E24A0F61400C5F432 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BF60D27F24A0F6CA00C5F432 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF428F1D249946BA00D19845 /* Info.plist */,
+				BF428F15249946B900D19845 /* Main.storyboard */,
+				BF428F1A249946BA00D19845 /* LaunchScreen.storyboard */,
+				BF428F18249946BA00D19845 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF60D28024A0F7B300C5F432 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BF60D28124A0F87000C5F432 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BF60D28224A0F89000C5F432 /* SearchViewController.swift */,
+				BF60D28424A0F89F00C5F432 /* SearchPresenter.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		BF60D28624A0F99300C5F432 /* ReposTable */ = {
+			isa = PBXGroup;
+			children = (
+				BF60D28724A0F9B900C5F432 /* ReposTableViewController.swift */,
+				BF60D28924A0F9E800C5F432 /* ReposTablePresenter.swift */,
+			);
+			path = ReposTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,10 +359,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF428F14249946B900D19845 /* ViewController.swift in Sources */,
+				BF60D28324A0F89000C5F432 /* SearchViewController.swift in Sources */,
 				BF428F10249946B900D19845 /* AppDelegate.swift in Sources */,
+				BF60D28524A0F89F00C5F432 /* SearchPresenter.swift in Sources */,
 				BF428F12249946B900D19845 /* SceneDelegate.swift in Sources */,
 				BF31F215249D71DF0048D5FA /* Repository.swift in Sources */,
+				BF60D28824A0F9B900C5F432 /* ReposTableViewController.swift in Sources */,
+				BF60D28A24A0F9E800C5F432 /* ReposTablePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "GitBook-IOS13/Info.plist";
+				INFOPLIST_FILE = "GitBook-IOS13/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,7 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "GitBook-IOS13/Info.plist";
+				INFOPLIST_FILE = "GitBook-IOS13/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
