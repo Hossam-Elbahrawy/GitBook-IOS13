@@ -1,4 +1,4 @@
-# Git-Book APP
+# Git-Book App
  <img src="Documentation/bahrawy_banner.png" alt="Logo" width="100%">
 
 
@@ -28,7 +28,7 @@ pod install
 - [ ] Search screen unit tests
 - [ ] Build network layer
 - [ ] Get user's repos using [GitHub API](https://developer.github.com/v3/)
-- [x] Repose model
+- [x] Repos model
 - [ ] Repos list screen view
 - [ ] Repos list screen presenter
 - [ ] Repos list screen unit tests
