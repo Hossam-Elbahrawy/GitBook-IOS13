@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="PressStart2P-Regular.ttf">
+            <string>PressStart2P-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Search View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -15,19 +20,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJO-A7-Jfd">
-                                <rect key="frame" x="183" y="446" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Search"/>
-                                <connections>
-                                    <segue destination="UPg-Xj-cNh" kind="show" id="psf-kA-RxJ"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJO-A7-Jfd">
+                                <rect key="frame" x="131" y="421" width="152" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="jSo-lF-ft0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="152" id="kLf-Pz-IjN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitBook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgK-v9-mqi">
+                                <rect key="frame" x="20" y="116" width="374" height="66"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="List Your GitHub Reposatories" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sd8-2r-xzt">
+                                <rect key="frame" x="20" y="190" width="374" height="24.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hlm-lm-CD4">
+                                <rect key="frame" x="20" y="310.5" width="91" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GitHub Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rj9-WZ-wW4">
+                                <rect key="frame" x="20" y="346.5" width="374" height="42.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Made with ❤️ by Bahrawy" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0IY-fc-gSV">
+                                <rect key="frame" x="20" y="849.5" width="374" height="12.5"/>
+                                <fontDescription key="fontDescription" name="PressStart2P-Regular" family="Press Start 2P" pointSize="11"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Sd8-2r-xzt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0zE-mT-uWe"/>
+                            <constraint firstItem="Rj9-WZ-wW4" firstAttribute="top" secondItem="hlm-lm-CD4" secondAttribute="bottom" constant="8" id="1PT-7N-Kyl"/>
+                            <constraint firstItem="Sd8-2r-xzt" firstAttribute="top" secondItem="KgK-v9-mqi" secondAttribute="bottom" constant="8" id="3xI-oI-E0E"/>
+                            <constraint firstItem="hlm-lm-CD4" firstAttribute="top" secondItem="Sd8-2r-xzt" secondAttribute="bottom" constant="96" id="6aI-kh-oed"/>
+                            <constraint firstItem="hlm-lm-CD4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9RA-bz-Wx7"/>
+                            <constraint firstItem="xJO-A7-Jfd" firstAttribute="top" secondItem="Rj9-WZ-wW4" secondAttribute="bottom" constant="32" id="DP8-It-TxH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0IY-fc-gSV" secondAttribute="trailing" constant="20" id="K0i-16-cau"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KgK-v9-mqi" secondAttribute="trailing" constant="20" id="Pdf-XN-isY"/>
+                            <constraint firstItem="KgK-v9-mqi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="Wdw-oc-zxv"/>
+                            <constraint firstItem="xJO-A7-Jfd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aDR-JZ-KG2"/>
+                            <constraint firstItem="KgK-v9-mqi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g3z-6U-b0s"/>
+                            <constraint firstItem="0IY-fc-gSV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gyc-BV-SDs"/>
+                            <constraint firstItem="Rj9-WZ-wW4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="h6B-Vo-Qfd"/>
+                            <constraint firstItem="0IY-fc-gSV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kPu-2t-6KB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sd8-2r-xzt" secondAttribute="trailing" constant="20" id="oyh-S0-3sZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rj9-WZ-wW4" secondAttribute="trailing" constant="20" id="zqt-aZ-NUw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="IJ8-8K-3Xp"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

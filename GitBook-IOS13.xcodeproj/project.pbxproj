@@ -20,6 +20,7 @@
 		BF60D28524A0F89F00C5F432 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D28424A0F89F00C5F432 /* SearchPresenter.swift */; };
 		BF60D28824A0F9B900C5F432 /* ReposTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D28724A0F9B900C5F432 /* ReposTableViewController.swift */; };
 		BF60D28A24A0F9E800C5F432 /* ReposTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D28924A0F9E800C5F432 /* ReposTablePresenter.swift */; };
+		BFDFB69724A144C5000FEFD0 /* PressStart2P-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFDFB69624A144C5000FEFD0 /* PressStart2P-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		BF60D28424A0F89F00C5F432 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		BF60D28724A0F9B900C5F432 /* ReposTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTableViewController.swift; sourceTree = "<group>"; };
 		BF60D28924A0F9E800C5F432 /* ReposTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTablePresenter.swift; sourceTree = "<group>"; };
+		BFDFB69624A144C5000FEFD0 /* PressStart2P-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PressStart2P-Regular.ttf"; sourceTree = "<group>"; };
 		C204969CCA8D783754A2F551 /* Pods-GitBook-IOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook-IOS13.release.xcconfig"; path = "Target Support Files/Pods-GitBook-IOS13/Pods-GitBook-IOS13.release.xcconfig"; sourceTree = "<group>"; };
 		CA9EF4FA1513C2703AB21F87 /* Pods_GitBook_IOS13Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitBook_IOS13Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -158,6 +160,7 @@
 		BF60D27F24A0F6CA00C5F432 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BFDFB69524A144A3000FEFD0 /* fonts */,
 				BF428F1D249946BA00D19845 /* Info.plist */,
 				BF428F15249946B900D19845 /* Main.storyboard */,
 				BF428F1A249946BA00D19845 /* LaunchScreen.storyboard */,
@@ -189,6 +192,14 @@
 				BF60D28924A0F9E800C5F432 /* ReposTablePresenter.swift */,
 			);
 			path = ReposTable;
+			sourceTree = "<group>";
+		};
+		BFDFB69524A144A3000FEFD0 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BFDFB69624A144C5000FEFD0 /* PressStart2P-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFDFB69724A144C5000FEFD0 /* PressStart2P-Regular.ttf in Resources */,
 				BF428F1C249946BA00D19845 /* LaunchScreen.storyboard in Resources */,
 				BF428F19249946BA00D19845 /* Assets.xcassets in Resources */,
 				BF428F17249946B900D19845 /* Main.storyboard in Resources */,
@@ -535,7 +547,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "SpidersCo.GitBook-IOS13";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -553,7 +565,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "SpidersCo.GitBook-IOS13";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

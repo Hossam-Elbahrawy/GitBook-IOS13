@@ -22,8 +22,8 @@ pod install
 
 ## To-Do
 - [x] Read about MVP architecture  
-- [ ] Launch screen
-- [ ] Search screen view
+- [x] Launch screen
+- [x] Search screen view
 - [ ] Search screen presenter
 - [ ] Search screen unit tests
 - [ ] Build network layer
