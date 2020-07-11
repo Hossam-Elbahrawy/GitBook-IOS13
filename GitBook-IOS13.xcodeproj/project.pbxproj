@@ -16,6 +16,7 @@
 		BF428F19249946BA00D19845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF428F18249946BA00D19845 /* Assets.xcassets */; };
 		BF428F1C249946BA00D19845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF428F1A249946BA00D19845 /* LaunchScreen.storyboard */; };
 		BF428F27249946BA00D19845 /* GitBook_IOS13Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF428F26249946BA00D19845 /* GitBook_IOS13Tests.swift */; };
+		BF4A460724BA75D4000A0E6F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4A460624BA75D4000A0E6F /* Router.swift */; };
 		BF60D28324A0F89000C5F432 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D28224A0F89000C5F432 /* SearchViewController.swift */; };
 		BF60D28524A0F89F00C5F432 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D28424A0F89F00C5F432 /* SearchPresenter.swift */; };
 		BF60D28824A0F9B900C5F432 /* ReposTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D28724A0F9B900C5F432 /* ReposTableViewController.swift */; };
@@ -49,6 +50,7 @@
 		BF428F22249946BA00D19845 /* GitBook-IOS13Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GitBook-IOS13Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF428F26249946BA00D19845 /* GitBook_IOS13Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitBook_IOS13Tests.swift; sourceTree = "<group>"; };
 		BF428F28249946BA00D19845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF4A460624BA75D4000A0E6F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		BF60D28224A0F89000C5F432 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BF60D28424A0F89F00C5F432 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		BF60D28724A0F9B900C5F432 /* ReposTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTableViewController.swift; sourceTree = "<group>"; };
@@ -98,14 +100,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		BF31F213249D71C40048D5FA /* Model */ = {
+		BF2266E624BA738500F3389C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BF60D28624A0F99300C5F432 /* ReposTable */,
 				BF60D28124A0F87000C5F432 /* Search */,
+				BF60D28624A0F99300C5F432 /* ReposTable */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF31F213249D71C40048D5FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				BF31F214249D71DF0048D5FA /* Repository.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BF428F03249946B900D19845 = {
@@ -132,8 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				BF60D28024A0F7B300C5F432 /* Network */,
-				BF60D27E24A0F61400C5F432 /* Presenter */,
-				BF31F213249D71C40048D5FA /* Model */,
+				BF31F213249D71C40048D5FA /* Models */,
+				BF2266E624BA738500F3389C /* Views */,
+				BF60D27E24A0F61400C5F432 /* Presenters */,
 				BF60D27F24A0F6CA00C5F432 /* Resources */,
 				BF428F0F249946B900D19845 /* AppDelegate.swift */,
 				BF428F11249946B900D19845 /* SceneDelegate.swift */,
@@ -150,11 +160,13 @@
 			path = "GitBook-IOS13Tests";
 			sourceTree = "<group>";
 		};
-		BF60D27E24A0F61400C5F432 /* Presenter */ = {
+		BF60D27E24A0F61400C5F432 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				BF60D28924A0F9E800C5F432 /* ReposTablePresenter.swift */,
+				BF60D28424A0F89F00C5F432 /* SearchPresenter.swift */,
 			);
-			path = Presenter;
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		BF60D27F24A0F6CA00C5F432 /* Resources */ = {
@@ -172,6 +184,7 @@
 		BF60D28024A0F7B300C5F432 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BF4A460624BA75D4000A0E6F /* Router.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -180,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				BF60D28224A0F89000C5F432 /* SearchViewController.swift */,
-				BF60D28424A0F89F00C5F432 /* SearchPresenter.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -189,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				BF60D28724A0F9B900C5F432 /* ReposTableViewController.swift */,
-				BF60D28924A0F9E800C5F432 /* ReposTablePresenter.swift */,
 			);
 			path = ReposTable;
 			sourceTree = "<group>";
@@ -371,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4A460724BA75D4000A0E6F /* Router.swift in Sources */,
 				BF60D28324A0F89000C5F432 /* SearchViewController.swift in Sources */,
 				BF428F10249946B900D19845 /* AppDelegate.swift in Sources */,
 				BF60D28524A0F89F00C5F432 /* SearchPresenter.swift in Sources */,
